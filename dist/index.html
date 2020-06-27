@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>EasyMusic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-vjBZc/DqIqR687k5rf6bUQ6IVSOxQUi9TcwtvULstA7+YGi//g3oT2qkh8W1Drx9" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/android-chrome-512x512.05b883fb.png">
+    <!--Front awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/style.78032849.js"></script><script src="/napster.js"></script></head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top ">
+        <div class="container">
+        <i class="fas fa-headphones-alt" id="brand-icon"></i>
+        <h1 class="navbar-brand left" href="#">EasyMusic </h1>
+        
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-collapse">           
+            <div class="fas fa-bars" id="bar-icon"></div>
+         </button>
+         
+        <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="navbar-nav ml-auto box">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/napster.html">Naspter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div></nav>
+    <br><br><br>
+        <div class="container-fluid bg-light bg3  mx-auto">
+            <h1><a href="https://us.napster.com/"><i class="fab fa-napster"></i>What Is Naspter?</a></h1> 
+            <h5>Napster is a set of three music-focused online services. It was founded in 1999 as a pioneering peer-to-peer (P2P) file sharing Internet software that emphasized sharing digital audio files, typically audio songs, encoded in MP3 format.</h5>       
+        </div>
+
+        <div class="container-fluid bg-light   mx-auto2">
+            <h1><span id="loadplay"> </span>Let the Music Speak! </h1> 
+
+            <h3>Welcome! We Never Forget You, </h3>
+            <h3 id="name" contenteditable="true" style="color:maroon"></h3>
+
+            <h4>We provides Napster Music and Youtube Related Services.</h4>
+            
+            <a class="btn btn-outline-info" href="#jump">Try it</a>             
+        </div>
+            
+
+
+
+<div class="container">
+    <div class="header" id="jump">
+      Top Music Tracks by Naspter
+      <p>(Update Everyday) </p>
+    </div>
+   
+    <div id="tracks-container1" class="Toptrack1 pl-5 ml-5"></div>
+  </div>
+
+  
+  <script id="tracks-template1" type="text/x-handlebars-template">
+    
+    {{#each tracks}}
+    <div data-track-id="{{id}}" style="background-image:url(http://direct.rhapsody.com/imageserver/v2/albums/{{albumId}}/images/300x300.jpg)" class="cover">
+    <div class=content-name>{{name}}</div>
+    <audio controls class= "audio">
+      <source src="{{previewURL}}" type="audio/mpeg">
+    </audio>
+    </div>
+  </div>
+    {{/each}}
+  </script>
+ 
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+ 
+  <script src="/main.fb6bbcaf.js"></script>
+  </body>
+</html>

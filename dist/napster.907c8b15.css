@@ -1,0 +1,217 @@
+/*  smooth */
+html {
+    scroll-behavior: smooth;
+  }
+
+  #brand-icon{
+    font-size:40px;
+    color:white;
+  }
+
+  .napsterBG {
+    background-image: url('/napsterBG.2a097f6a.jpeg');
+    background-repeat: no repeat;
+    background-position: center; 
+    width:100%;
+    height:40vw;
+    position:relative;
+  }
+
+  .napsterBG::after{
+    content: '';
+    position: absolute;
+    top:0%;
+    left: 0%;
+    right:0%;
+    width: 100%;
+    height:40vw;
+    z-index:1;
+    background:rgba(0,0,0,0.2);
+    box-shadow: inset 120px 100px 250px #000;
+    box-shadow: inset -120px -0px 250px #000;
+  }
+
+  .napsterBG h1 {
+      color:white;
+      text-align: center;
+      padding-top:10vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+      font-size: 60px;
+      z-index:2;
+  }
+
+  .bold {
+      font-weight: bolder;
+      font-family: fantasy;  
+      position:relative;
+      z-index:2;
+  }
+
+  .fix {
+    position:fixed;
+     left:94%;
+     top:90%;
+    }
+
+    .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      border-radius: 35px;
+      font-size: 24px;
+      line-height: 1.33;
+  }
+  
+  .btn-circle {
+      width: 30px;
+      height: 30px;
+      padding: 6px 0px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.42857;
+  }
+
+  .fa-arrow-up{
+    font-size:30px;
+    padding-top:28%;
+  }
+
+    .napsterBG2 {
+        background-image: url('/napsterBG2.e1b4b2b1.jpeg');
+        background-repeat: no repeat;
+        background-position: center; 
+        width:100%;
+      }
+
+      #bg{      
+        padding-left:6%; 
+      }
+
+      #test{
+        padding-top:35vw; 
+        padding-left:9%;   
+        
+    }
+
+      #test2{
+        background-image: url(/napsterBG2.e1b4b2b1.jpeg); 
+        background-repeat:  no-repeat; 
+        background-size: 100% 100%;
+        padding-top:190vw;
+        
+       
+    }
+
+    .move {
+      font-size: 50px;
+      display: inline-block;
+      text-align: center;
+      padding-left:33%;
+      
+      color:#fff;
+    }
+
+    #space{
+      background-size: cover;
+      display: inline-block;
+      color:#fff;
+    }
+
+  /* napster playlist cxss */
+  .header {
+    font-size: 50px;
+    text-align: center;
+    
+  }
+  .track-cover {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+  }
+  
+  .cover {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    float: left;
+    border: 3px solid black; 
+    position: relative;
+  }
+  
+  .audio {
+    position: absolute;
+      bottom: 0;
+  }
+
+  .audio2 {
+    position: relative;
+    padding-top:35%;
+  }
+  .cover:hover {
+    cursor: pointer;
+  }
+  
+  .content-name{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .back-button {
+        /* Remove all decorations to look like normal text */
+      background: none;
+      border: none;
+      display: inline;
+      font: inherit;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      outline-offset: 0;
+      /* Additional styles to look like a link */
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+/* For 640 Resolution Mobile*/  
+@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 640px)  
+{  
+  #test2{
+  padding-top:340vw;
+  }
+
+  #test{
+    padding-top:170vw;
+  }
+}  
+
+#float{
+  height:500vh;
+}
+  
+@media only screen   
+and (min-device-width : 700px)   
+and (max-device-width : 1100px)  
+{  
+  #test2{
+  padding-top:340vw;
+  }
+
+  #test{
+    padding-top:170vw;
+  }
+}  
+
+
+
+
+  
+
+/*# sourceMappingURL=/napster.907c8b15.css.map */

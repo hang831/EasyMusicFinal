@@ -1,0 +1,212 @@
+/*  smooth */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  #brand-icon{
+    font-size:40px;
+  }
+ 
+  #searchForm p {
+    font-size:15px;
+  }
+  
+  .header {
+    font-size: 50px;
+    text-align: center;
+    
+  }
+  .track-cover {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+  }
+  
+  .cover {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    
+    border: 3px solid black; 
+    position: relative;
+  }
+  
+  .audio {
+      position: absolute;
+      bottom: 0;
+  }
+  .cover:hover {
+    cursor: pointer;
+  }
+  
+  .content-name{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .back-button {
+        /* Remove all decorations to look like normal text */
+      background: none;
+      border: none;
+      display: inline;
+      font: inherit;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      outline-offset: 0;
+      /* Additional styles to look like a link */
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+  #Declare{
+    padding-top: 20px;;
+    text-align: center;
+  }
+
+  #Declare i,h2{
+    display: inline;
+  }
+
+  .fa{
+    font-size: 30px;
+  }
+
+  .bg4 {
+    background-image: url('../img/bg4.jpeg');
+    background-repeat: no repeat;
+    background-position: center;
+  }
+
+  .size img{
+    width:100%;
+  }
+
+  .coll {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .coll:after {
+    content: '\02796'; /* Unicode character for "minus" sign (-) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active2:after {
+    content: "\2795"; /* Unicode character for "plux" sign (+) */
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active2, .coll:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    
+  }
+
+  .none {
+    display:none;
+  }
+
+  #result2 {
+    width:100%;
+    min-height:50vh;
+  }
+
+  #myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+
+  .hide, .hide2{
+    display:none;
+  }
+
+  #myBar {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+
+  .fix {
+  position:fixed;
+   left:70%;
+   top:75%;
+  }
+
+  .fix input{
+    width:38%;
+  }
+
+  .fix2 {
+  position:fixed;
+   left:94%;
+   top:80%;
+  }
+
+  .hidehide {
+    display:none;
+  }
+
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+  .btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+
+  
+  
+  
+  
+  @media(min-width:960px){
+    #movies .col-md-3 .well{
+      height: 390px;
+    }
+  
+    #movies .col-md-3 img{
+      height:240px;
+    }
+  }
+  

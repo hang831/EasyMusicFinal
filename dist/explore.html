@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>EasyMusic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-vjBZc/DqIqR687k5rf6bUQ6IVSOxQUi9TcwtvULstA7+YGi//g3oT2qkh8W1Drx9" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="/android-chrome-512x512.05b883fb.png">
+    <!--Front awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/second.de1304cd.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/second.de1304cd.js"></script></head>
+  <body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top ">
+        <div class="container">
+        <i class="fas fa-headphones-alt" id="brand-icon"></i>
+        <h1 class="navbar-brand left" href="#">EasyMusic </h1>
+        
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-collapse">           
+            <div class="fas fa-bars" id="bar-icon"></div>
+         </button>
+         
+        <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="navbar-nav ml-auto box">
+          <li class="nav-item ">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/napster.html">Napster</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/explore.html">Explore <span class="sr-only">(current)</span> </a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="/contact.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div></nav>
+    <br>
+    <br>
+    <section id="Declare">
+      
+      <div class="container-xl mb-5">
+        <i class="fa fa-bullhorn " aria-hidden="true"></i> <h2>Declare:</h2>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">Some videos are not allowed to be embedded becasue of youtube policy or video owner setting, but not the privacy problem. </div>
+        <div class="shadow-lg p-3  bg-white rounded">It is legal to download a converted Youtube video to MP3, but
+          it is illegal if it is a song or video under copyright law and for any commercial purposes and derives any monetary benefits from it.</div>
+      </div>
+    </section>
+    
+    
+
+    <section id="Search" class="section bg-grey bg4">
+      <div class="container">
+        <div class="container">
+          <div class="jumbotron">
+            <h3 class="text-center list-group-item list-group-item-secondary">Search For Any Youtube Movie</h3>
+            
+            <form id="searchForm">
+              <p class="font-weight-bold">Search Youtube Movie by Keyword</p>
+              <input type="text" class="form-control" id="movie" placeholder="Search Movies...">
+              <br>
+              <p class="font-weight-bold">Limit Youtube Movie by Number</p>
+              <input type="text" class="form-control" id="movieNumber" placeholder="Limit...(Maxixum:9)">
+              <button type="submit" class="btn  btn-secondary btn-block mt-4 submit">Submit</button>
+            </form>
+
+            <br>
+            <button type="button" class="coll active2 text-center btn-info">Get Youtube Channel Playlist</button>
+            
+            <div class="content">
+
+              <div class="container2">
+                <div class="jumbotron2">
+                    <form id="searchForm2">
+                      <img src="/select.c762310e.gif" alt="how to do">
+                      <p class="font-weight-bold">Please Enter channel ID</p>
+                      <input type="text" class="form-control" id="channel" placeholder="UCZ38e7u1XycAlKmWYToHubg">
+                      <br>
+                      <p class="font-weight-bold none">Number of video for display</p>
+                      <input type="number" class="form-control none2" id="channelNumber" placeholder="Limit...(Maxixum:50)" style="display:none;">
+                    <button type="submit" class="btn  btn-secondary btn-block mt-4 ">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <p class="hide">Loading... Please wait.</p>
+              <p class="hide2">Thank, Result is in below. </p>
+              <div id="myProgress">
+                <div id="myBar" style="display:none" class="submit">0%</div>
+              </div>
+              </div>
+
+          </div>
+        </div>
+    
+        <div class="container ">
+            <div id="resultsbutton" class="row">
+            <button id="btnbtn" class="btn btn-info" style="display:none">Click me to toggle</button>
+            </div>
+            <div id="results" class="row"></div>
+        </div>
+
+        <div class="container ">
+            <div id="resultsbutton2" class="row">
+            <button id="btnbtn2" class="btn btn-info" style="display:none">Click me to toggle</button>
+            </div>
+            <div id="results2" class="row"></div>
+              
+              <div class="fix hidehide">
+              <textarea id="myText" rows="4" cols="50" style="width:70%" placeholder="Your can take notes here, your file can be saved as any file format.     For example: ***docx,pdf,txt(default)***"></textarea>
+              <br>
+            <input type="text" placeholder="FileName" id="FileName">
+            <button type="button" id="btnbtn3" class="btnbtn3  btn btn-warning">Click to Save file</button>
+            
+            </div>
+              <button type="button" class="btnbtn4 fix2 btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i></button>
+        </div>
+        
+      
+    </section>
+
+    <section class="jumbotron text-center">
+      <div class="container size">
+
+          <h1><font color="#007bff">Blue</font>Convert is a Youtube video to MP3/MP4 tool.</h1>
+          <img src="/showcase.0add47b6.gif" alt="how to do">
+          <p class="lead text-muted"> Support BlueConvert: </p>
+          <a href="http://blueconvert.com/">WEB Link</a>
+           <br>  
+          <a href="https://chrome.google.com/webstore/detail/youtube-mp3-downloader/jphdnibheeacnoenodkekhfjhnepegia">Google Entension</a>
+          </div>
+          </section>
+
+          
+          
+
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/19JZgTzukyM" allowfullscreen=""></iframe>
+        </div>
+        <!-- Social buttons -->
+        <div class="page-footer font-small special-color-dark pt-4">
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </li>
+        
+        <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        
+      </ul>
+      </div>
+      <!-- Social buttons -->
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+  
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© EASYMUSIC 2020 All Rights Reserved
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+   
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+  <script src="/second.3f8c2825.js"></script>
+  
+  </body>
+</html>
