@@ -285,7 +285,7 @@ for (i = 0; i < coll.length; i++) {
             Bar3.style.display = "block";
           } else {
             Bar2.style.display = "block";
-            Bar3.style.display = "nono";
+            Bar3.style.display = "none";
             width++;
             elem.style.width = width + "%";
             elem.innerHTML = width  + "%";
