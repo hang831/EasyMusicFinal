@@ -131,7 +131,7 @@ function showplaylist(data){
     show2.style.display = "block";}
   
   const content = document.querySelector(".content"); //set default display vh to 30  try vw?
-  content.style.minHeight = "30vh";                   
+  content.style.minHeight = "300px";                   
   const coll2 = document.querySelector(".coll");
   coll2.addEventListener("click", function() {        //when click the toggle, set vh
   content.style.minHeight = "0vh"                     //to 0 = display area disappear
