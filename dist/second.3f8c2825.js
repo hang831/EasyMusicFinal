@@ -381,9 +381,9 @@ function showplaylist(data) {
       show2.style.display = "block";
     }
 
-    var content = document.querySelector(".content"); //set default display vh to 70 
+    var content = document.querySelector(".content"); //set default display vh to 30 
 
-    content.style.minHeight = "70vh";
+    content.style.minHeight = "30vh";
     var coll2 = document.querySelector(".coll");
     coll2.addEventListener("click", function () {
       //when click the toggle, set vh
