@@ -34,7 +34,7 @@ function fetchMovie(e) {
   }
   
  // Fetch Movies
- fetchJsonp( `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${movie}&key=AIzaSyCI0ULuQ4191oGLsP4B4qRc-V8sFj3bz8o&type=video&maxResults=${movieNumber}&callback=callback`,
+ fetchJsonp( `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${movie}&key=AIzaSyCbdoPhnzxDlyF5SWJZyWjBujTFxDjA5Rk&type=video&maxResults=${movieNumber}&callback=callback`,
  {
   jsonpCallbackFunction: 'callback'
 }
@@ -106,7 +106,7 @@ function fetchChannel(e) {
   }
 
  // Fetch channel
- fetchJsonp( `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channel}&key=AIzaSyAU3Ph1_2qQ0lDbFwWJmhIMEexP8TYRln4&callback=callback`,
+ fetchJsonp( `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channel}&key=AIzaSyCbdoPhnzxDlyF5SWJZyWjBujTFxDjA5Rk&callback=callback`,
  {
   jsonpCallbackFunction: 'callback'
 }
@@ -149,7 +149,7 @@ function showplaylist(data){
   
 
   // Fetch channelplaylists
- fetchJsonp( `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&playlistId=${getchannel}&key=AIzaSyAU3Ph1_2qQ0lDbFwWJmhIMEexP8TYRln4&maxResults=${channelNumber}&callback=callback`,
+ fetchJsonp( `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&playlistId=${getchannel}&key=AIzaSyCbdoPhnzxDlyF5SWJZyWjBujTFxDjA5Rk&maxResults=${channelNumber}&callback=callback`,
  {
   jsonpCallbackFunction: 'callback'
 }
