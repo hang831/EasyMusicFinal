@@ -40,7 +40,7 @@ function fetchMovie(e) {
 }
 )
 .then(res => res.json())
-//.then(data => showVideo(data.items.map(data => data.id)))
+
 .then(data => console.log(data))
 .catch(err => console.log(err));
 const Bar = document.querySelector('#myBar'); // 0%
